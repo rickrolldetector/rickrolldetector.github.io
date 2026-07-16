@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RickRoll Detector</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">RickRoll Detector</h1>
+            <div class="language-switcher">
+                <button data-lang="en" class="active">EN</button>
+                <button data-lang="de">DE</button>
+            </div>
+        </header>
+        <p id="description">Enter a URL to check if it's a Rickroll.</p>
+        <div class="input-group">
+            <input type="text" id="urlInput" placeholder="https://example.com" />
+            <button id="checkBtn">Check</button>
+        </div>
+        <div id="result"></div>
+        <div class="actions">
+            <a id="issuesLink" href="#" target="_blank">Suggest new Rickroll URL</a>
+        </div>
+        <footer>
+            <p id="footerText">Detect Rickrolls before it's too late!</p>
+        </footer>
+    </div>
+    <script src="rickrolls.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
